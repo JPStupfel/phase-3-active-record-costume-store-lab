@@ -8,6 +8,9 @@ RSpec.configure do |config|
     # Run migrations for test environment
     Rake::Task["db:migrate"].execute
   end
+  # Rake::Task["db:rollback"].execute
+  # Rake::Task["db:rollback"].execute
+
 
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
